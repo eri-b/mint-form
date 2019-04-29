@@ -4,19 +4,97 @@
         <title>Forms</title>
         <meta charset="utf-8">
         <style>
-            
+            body {
+                display: flex;
+                width: 100%;
+                background-color: #e9ebef;
+                justify-content: center;
+            }
+
+            #form-area {
+                margin-top: 200px;
+                display: block;
+                width: 380px;
+                padding: 30px;
+                border: 1px solid #c7c7c7;
+                background-color: white;
+                color: #4c4c4c;
+                font-family: sans-serif;
+            }
+
+            #form-area h1 {
+                font-weight: normal;
+                margin: 0;
+            }
+
+            #form-area form label, #form-area form label input {
+                display: block;
+            }
+
+            #form-area form label {
+                margin: 30px 0;
+            }
+
+            #form-area form input {
+                width: 100%;
+                margin-top: 10px;
+                height: 30px;
+                border: 1px solid rgb(167, 167, 167);
+                border-radius: 3px;
+            }
+
+            #form-area form input[type="submit"]{
+                border: none;
+                background-color: #006cbd;
+                color: white;
+                height: 45px;
+                box-shadow: 0 1px 1px gray;
+                font-size: 16px;
+                cursor: pointer;
+                opacity: 0.85;
+                transition: opacity 0.3s;
+            }
+
+            #form-area form input[type="submit"]:hover {
+                opacity: 0.9;
+            }
+
+            #form-area p {
+                margin-top: 6px;
+                font-size: 10px;
+            }
+
+            p#form-footer {
+                font-style: italic;
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 40px;
+                padding: 0 30px;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            #recaptcha {
+                display: flex;
+                width: 100%;
+                background-color: rgb(187, 187, 187);
+                padding: 0;
+            }
+
         </style>
     </head>
     <body>
-        <div>
-            <div>
+        <div id="form-area">
+            <div class="center">
                 <h1>One Account.</h1>
                 <h1>Everything Intuit.</h1>
                 <p>Create an account for all of Intuit's products including Mint.</p>
             </div>
             <form>
                 <label>
-                    Email Address
+                    Email Address   
                     <input type="email"  name="email" required>
                 </label>
                 <label>
@@ -30,6 +108,11 @@
                 </label>
                 <input type="submit" name="submit" value="Create Account">
             </form>
+
+            <p id="form-footer" class="center">By clicking Create Account, you agree to our
+                Terms of Service and have read and acknowledge our Privacy Statement.</p>
+
+            <div id="recaptcha">Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.</div>
         </div>
     </body>
 </html>

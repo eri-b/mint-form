@@ -6,6 +6,8 @@ body {
     font-family: sans-serif;
 }
 
+*{box-sizing:border-box;}
+
 .nav-right {
     display: flex;
     position: absolute;
@@ -69,7 +71,6 @@ body {
     margin: 0 auto 50px auto;
     display: block;
     width: 380px;
-    box-sizing:border-box;
     border: 1px solid #c7c7c7;
     background-color: white;
     color: #4c4c4c;

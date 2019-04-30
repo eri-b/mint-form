@@ -6,14 +6,14 @@ body {
     font-family: sans-serif;
 }
 
-#nav-right {
+.nav-right {
     display: flex;
     position: absolute;
     right: 15px;
     align-items: center;
 }
 
-#nav-right input {
+.nav-right input {
     border: 1px solid black;
     border-radius: 3px;
     background-color: #006cbd;
@@ -27,68 +27,69 @@ body {
     transition: opacity 0.3s;
 }
 
-#nav-right input:hover {
+.nav-right input:hover {
     opacity: 0.9;
 }
 
-#nav-texts {
+.nav-texts {
     margin-right: 5px;
     line-height: 5px;
     font-size: 12px;
 }
 
-#intuit {
+.intuit {
     color: #82858b;
     margin-top: 100px;
     margin: 20px auto;
 }
 
-#intuit > p {
+.intuit > p {
     font-size: 36px;
     font-family: fantasy;
     font-weight: bolder;
     margin-bottom: 10px;
 }
 
-#intuit img {
+.intuit img {
     position: relative;
     top: 5px;
     width: 20px;
 }
 
-#icons {
+.icons {
     margin-bottom: 0;
 }
 
-#icons p {
+.icons p {
     display: inline-block;
     margin: 0;
 }
 
-#form-area {
+.form-area {
     margin: 0 auto 50px auto;
     display: block;
     width: 380px;
+    box-sizing:border-box;
     border: 1px solid #c7c7c7;
     background-color: white;
     color: #4c4c4c;
     
 }
-#inner-form{padding: 30px;}
-#form-area h1 {
+.inner-form{padding: 30px;}
+.form-area h1 {
     font-weight: normal;
     margin: 0;
 }
 
-#form-area form label, #form-area form label input {
+.form-area form label, .form-area form label input {
     display: block;
 }
 
-#form-area form label {
+.form-area form label {
     margin: 30px 0;
 }
 
-#form-area form input {
+.form-area form input {
     width: 100%;
     margin-top: 10px;
     height: 30px;
@@ -96,7 +97,7 @@ body {
     border-radius: 3px;
 }
 
-#form-area form input[type="submit"]{
+.form-area form input[type="submit"]{
     border: none;
     background-color: #006cbd;
     color: white;
@@ -108,16 +109,16 @@ body {
     transition: opacity 0.3s;
 }
 
-#form-area form input[type="submit"]:hover {
+.form-area form input[type="submit"]:hover {
     opacity: 0.9;
 }
 
-#form-area p, #form-area span {
+.form-area p, .form-area span {
     margin-top: 6px;
     font-size: 10px;
 }
 
-p#form-footer {
+p.form-footer {
     font-style: italic;
     font-size: 13px;
     line-height: 18px;
@@ -129,7 +130,7 @@ p#form-footer {
     text-align: center;
 }
 
-#recaptcha {
+.recaptcha {
     display: flex;
     background-color:#ECEEF1;
     padding: 25px;
@@ -137,5 +138,5 @@ p#form-footer {
     color: #8d9096;
 
 }
-#legal p {color:gray; font-size:14px; margin:5px 0;}
-#legal p span{margin:0 15px;}
+.legal p {color:gray; font-size:14px; margin:5px 0;}
+.legal p span{margin:0 15px;}
